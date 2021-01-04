@@ -12,11 +12,11 @@ import java.util.Set;
 @Setter
 @EqualsAndHashCode(exclude = {"recipes"})
 @Entity
-public class Category extends AbstractPersistable<Long> {
+public class Category{
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String description;
 
     @ManyToMany(mappedBy = "categories")

@@ -11,11 +11,11 @@ import java.util.Set;
 @Getter
 @Setter
 @Entity
-public class Recipe extends AbstractPersistable<Long> {
+public class Recipe{
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     private String description;
     private Integer prepTime;

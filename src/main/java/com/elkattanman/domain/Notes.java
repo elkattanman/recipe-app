@@ -11,11 +11,11 @@ import javax.persistence.*;
 @Setter
 @EqualsAndHashCode(exclude = {"recipe"})
 @Entity
-public class Notes extends AbstractPersistable<Long> {
+public class Notes{
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
     @OneToOne
     private Recipe recipe;

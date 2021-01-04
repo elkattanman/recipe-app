@@ -12,11 +12,11 @@ import java.math.BigDecimal;
 @Setter
 @EqualsAndHashCode(exclude = {"recipe"})
 @Entity
-public class Ingredient extends AbstractPersistable<Long> {
+public class Ingredient{
 
-//    @Id
-//    @GeneratedValue(strategy = GenerationType.IDENTITY)
-//    private Long id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String description;
     private BigDecimal amount;
 
