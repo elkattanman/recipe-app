@@ -1,4 +1,4 @@
-package com.elkattanman.converters;
+package com.elkattanman.DTO.converters;
 
 import com.elkattanman.DTO.RecipeCommand;
 import com.elkattanman.domain.Recipe;
